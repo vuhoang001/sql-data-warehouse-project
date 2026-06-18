@@ -1,7 +1,6 @@
 USE master; 
 GO
 
-
 IF EXISTS (SELECT name FROM sys.databases WHERE name = N'DataWarehouse')
 BEGIN
     ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
@@ -18,7 +17,6 @@ GO
 
 CREATE SCHEMA bronze;
 GO
-
 
 CREATE SCHEMA sliver;
 GO
